@@ -42,6 +42,9 @@ test:{
 	test1:{
 	name:suming1
 },
+	test2:{
+	name:suming2
+},
   globalData1.1: {
     userInfo: null
   }
