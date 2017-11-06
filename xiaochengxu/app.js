@@ -36,10 +36,9 @@ App({
   globalData: {
     userInfo: null
   },
-
-  globalDatabendixiugai: {
-		userInfo: null
-	},
+test:{
+	name:suming
+},
   globalData1.1: {
     userInfo: null
   }
