@@ -45,5 +45,8 @@ App({
 	},
 	newMethods1:{
 		username:"suming1"
+	},
+	newMethodstrest:{
+		username:"suhaiming1"
 	}
 })
