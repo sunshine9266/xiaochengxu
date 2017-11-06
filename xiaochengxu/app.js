@@ -40,6 +40,9 @@ App({
   globalDatabendixiugai: {
 		userInfo: null
 	},
+	person:{
+		age:28
+	}
   globalData1.1: {
     userInfo: null
   }
