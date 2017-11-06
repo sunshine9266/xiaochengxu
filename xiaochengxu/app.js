@@ -37,6 +37,10 @@ App({
     userInfo: null,
 	  age:28
   },
+globalDatatody: {
+    userInfo: undefined,
+	  age:28
+  },
   globalDatabendixiugai: {
 		userInfo: null
 	},
