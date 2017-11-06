@@ -39,5 +39,11 @@ App({
   },
   globalDatabendixiugai: {
 		userInfo: null
+	},
+	newMethods:{
+		username:"suming"
+	},
+	newMethods1:{
+		username:"suming1"
 	}
 })
