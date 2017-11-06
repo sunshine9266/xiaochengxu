@@ -1,0 +1,79 @@
+<view class="page-body">
+  <view class="cart-bg">
+    <view class="card">
+       <image src="../../images/vip.png" mode="aspectFill"></image>
+       <text>NO.363674745</text>
+    </view>
+  </view>
+  <view class="kongbai">    
+  </view>
+  <view class="pers-list">  
+    <!-- 个人信息 -->
+    <view class="pers-item pers-bt" bindtap="gotoPage">
+      <view class="pers-icon1">
+        <image src="../../images/icon/icon-center01.png"></image>
+      </view>
+      <view class="pers-text">{{userInfo.nickName}}</view>
+      <view class="pers-right">
+        <image src="../../images/icon/go.png"></image>
+      </view>
+      <view class="pers-right-content">
+        <image src="../../images/icon/lv1.png"></image>
+      </view>
+    </view>
+
+    <!-- 我的积分 -->
+    <view class="pers-item pers-bt" bindtap="gotoPage">
+      <view class="pers-icon1">
+        <image src="../../images/icon/icon-center02.png"></image>
+      </view>
+      <view class="pers-text">我的积分</view>
+      <view class="pers-right">
+        <image src="../../images/icon/go.png"></image>
+      </view>
+      <view class="pers-right-content">
+        <text>可用积分 : 0分</text>
+      </view>
+    </view>
+
+   <!-- 物流信息 -->
+   <view class="pers-item pers-bt" bindtap="getData">
+      <view class="pers-icon1">
+        <image src="../../images/icon/icon-center07.png"></image>
+      </view>
+      <view class="pers-text">我的订单</view>
+      <view class="pers-right">
+        <image src="../../images/icon/go.png"></image>
+      </view>
+    </view>
+
+    <!-- 我的优惠卷 -->
+    <view class="pers-item pers-bt" bindtap="gotoPage">
+      <view class="pers-icon1">
+        <image src="../../images/icon/icon-center04.png"></image>
+      </view>
+      <view class="pers-text">我的优惠卷</view>
+      <view class="pers-right">
+        <image src="../../images/icon/go.png"></image>
+      </view>
+    </view>
+
+    <!-- 清除缓存 -->
+    <view class="pers-item pers-bt" bindtap="clearData">
+      <view class="pers-icon1">
+        <image src="../../images/icon/icon-center05.png"></image>
+      </view>
+      <view class="pers-text">清除缓存</view>
+      <view class="pers-right">
+        <image src="../../images/icon/go.png"></image>
+      </view>
+    </view>
+
+    <!-- 版权所有 -->
+    <view class="content-footer">
+      <view class="fot-text" bindtap="makePhone">客服电话:010-82939190</view>
+      <view class="fot-end">版权所有：瑞盈生态 Copyright:ruiyingshengt</view>
+   </view>
+
+  </view>
+</view>

@@ -1,0 +1,92 @@
+.page{
+  width: 100%;
+  background: #efefef;
+  padding: 20rpx 5%;
+  box-sizing: border-box;
+}
+.pageBox{
+  clear: both;
+  height: 200rpx;
+  width: 100%;
+  padding: 20rpx;
+  box-sizing: border-box;
+  box-shadow: 2rpx 2rpx 10rpx grey;
+  border-radius: 8rpx; 
+  background: white;
+  margin-bottom: 20rpx;
+}
+.pageBox:last-of-type{
+  margin-bottom:0; 
+}
+.pageBox_left{
+  width: 24%;
+  height: 100%;
+  float: left;
+}
+.pageBox_left image{
+  width: 100%;
+  height: 100%;
+}
+.pageBox_content{
+  width: 53%;
+  height: 100%;
+  float: left;
+  font-size: 26rpx;
+  box-sizing: border-box;
+  padding: 0 10rpx;
+}
+.pageBox_right{
+  width: 23%;
+  float: right;
+  height: 100%;
+  padding-left: 18rpx; 
+  border-left: 4rpx solid gainsboro; 
+  box-sizing: border-box;
+}
+.pageBox_right view{
+  font-size: 32rpx;
+  width: 100%;
+  padding:10%; 
+  box-sizing: border-box;
+  height: 78%;
+  margin-top: 11%;
+  text-align: center;
+  background: #fe6f00;
+  color: white;
+  border-radius: 6rpx;
+}
+.pageBox_right text{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  line-height: 150%;
+}
+.content_name{
+  font-size: 28rpx;
+  font-weight: bolder; 
+  margin-bottom: 10rpx;
+}
+.content_address image{
+  width: 40rpx;
+  height: 50rpx;
+  float: left;
+  margin-top: 7rpx;
+}
+.content_address text{
+  clear: both;
+  display: inline-block;
+  margin-left: 10rpx;
+  width: 82%;
+  line-height: 32rpx;
+  height: 70rpx;
+  overflow: hidden;
+}
+.content_tel image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.content_tel text{
+  color: #fe6f00;
+  margin-left: 10rpx;
+  vertical-align: 10rpx;
+}

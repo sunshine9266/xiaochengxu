@@ -1,0 +1,33 @@
+<view>
+
+  <swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" class="banners" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{banner}}" wx:key="index">
+      <swiper-item class="banner" >
+          <image src="{{item.image}}"  data-id="{{item.id}}" bindtap="bindViewTap" class="banner-image" width="100%" height="100%"/>
+          <text class="banner-title">{{item.title}}</text>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="pageTop">
+    <image bindtap='scanCode' class='image_left' src="../../images/saoma.png"></image>
+    <input type='text' placeholder='请输入店铺名称'></input>
+    <image class='image_right' src="../../images/search.png"></image>
+  </view> 
+  <view class="news-item-container">
+    <block wx:for="{{list}}" wx:key="id">
+      <text wx:if="{{item.header}}" class="sub-title">{{item.header}}</text>
+      <navigator wx:else url="../detail/detail?id={{item.id}}">
+        <view class="news-item" >
+          <view class="news-item-left">
+            <text class="news-item-title">{{item.title}}</text>
+          </view>
+          <view class="news-item-right">
+            <image src="{{item.images[0]}}" class="news-image"/>
+          </view>
+        </view>
+      </navigator>
+    </block>
+  </view>
+  
+</view>

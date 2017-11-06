@@ -1,0 +1,69 @@
+<view class='wrap'>
+  <view class='head-img'>
+    <image src="{{userInfo.avatarUrl}}"></image>
+  </view>
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <!-- 姓名 -->
+    <view class='list'>
+      <text class='list-name'>姓名</text>
+      <text class='list-place'>(8个汉字，16个英文字母)</text>
+    </view>
+    <view class='name-input'>
+      <input value='{{userInfo.nickName}}' name="nickname"></input>
+    </view>
+    <!-- 性别 -->
+    <view class='list'>
+      <text class='list-name'>性别</text>
+      <text class='list-place'>(8个汉字，16个英文字母)</text>
+    </view>
+    <view class='name-input'>
+      <radio-group class="radio-group" name="sex">
+      <label class="radio" wx:if="{{userInfo.gender==1}}">
+        <radio value="男"  checked="checked"/>男
+        <radio value="女"/>女 
+        <radio value="未知"/>未知 
+      </label>
+      <label class="radio" wx:elif="{{userInfo.gender==2}}">
+        <radio value="男"/>男
+        <radio value="女" checked="checked" />女 
+        <radio value="未知"/>未知 
+      </label>
+      <label class="radio" wx:else>
+        <radio value="男"/>男
+        <radio value="女" />女 
+        <radio value="未知" checked="checked"/>未知 
+      </label>
+    </radio-group>
+    </view>
+    <!-- 手机号 -->
+    <view class='list'>
+      <text class='list-name'>手机号</text>
+    </view>
+    <view class='name-input'>
+      <input placeholder='请正确填写手机号' name="phone" value='{{wxUser.phone}}'></input>
+    </view>
+    <!-- 地址 -->
+    <view class='list'>
+      <text class='list-name'>地址</text>
+      <text class='list-place'>(18个字以内)</text>
+    </view>
+    <view class='name-input'>
+      <input placeholder='18个字以内' name="address" value='{{wxUser.address}}'></input>
+    </view>
+    <!-- 介绍自己 -->
+    <view class='list'>
+      <text class='list-name'>详细介绍一下自己</text>
+      <text class='list-place'>(100个字以内)</text>
+    </view>
+    <view class='name-input'>
+      <input  placeholder='100个字以内' name="mark" value='{{wxUser.mark}}'/>
+    </view>
+
+    <!-- 提交保存 --> 
+    <view class="btn-area">
+       <button type="primary" class='sub-btn' formType="submit">保存</button>
+       <button type="default" class='sub-btn' formType="reset">重置</button>
+    </view>
+
+  </form>
+</view>

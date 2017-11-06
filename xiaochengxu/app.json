@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/mine/mine",
+    "pages/order/order",
+    "pages/detail/detail",
+    "pages/person/person",
+    "pages/test/test"
+  ],
+  "window": {
+    "backgroundColor": "#fe6f00",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fe6f00",
+    "navigationBarTitleText": "网络营销",
+    "navigationBarTextStyle": "whtie",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#1296db",
+    "backgroundColor": "#f5f4f4",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "新闻",
+        "iconPath": "images/food_nor.png",
+        "selectedIconPath": "images/food_sel.png"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "导航",
+        "iconPath": "images/index_nor.png",
+        "selectedIconPath": "images/index_sel.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "会员中心",
+        "iconPath": "images/me_nor.png",
+        "selectedIconPath": "images/me_sel.png"
+      }
+    ]
+  }
+}

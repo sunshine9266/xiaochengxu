@@ -1,0 +1,19 @@
+<!-- 引入wxParse -->
+<import src= "../../wxParse/wxParse.wxml"/>
+<view wx:if="{{isShow}}">
+<view class="art-header">
+    <video id="myVideo" src="{{src}}" danmu-list="{{danmuList}}" objectFit="fill" 
+     enable-danmu danmu-btn controls poster="{{art.image}}"></video>
+    <view class="art-title">{{art.title}}</view>
+    <view class="art-source">{{art.image_source}}</view>
+</view>
+<view class="btn-area">
+  <input type='text' class='txtInput' placeholder='请输入评论的内容' bindblur="bindInputBlur"/>
+  <button type="primary" class='btnsend' bindtap="bindSendDanmu">用户评论</button>
+</view>
+<view class="art-content">
+    <!-- article名称和js页面的名称必须一致 -->
+    <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+</view> 
+</view>
+

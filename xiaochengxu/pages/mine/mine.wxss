@@ -1,0 +1,134 @@
+.page-body{
+    background-color: #f5f4f4;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    height: 31rem;
+}
+.cart-bg {
+    width: 100%;
+    background: black; 
+    height: 11rem;
+     z-index: 5;
+}
+
+.card {
+      width: 85%;
+      margin: 0 auto;
+      padding: 2rem 0;
+      position: relative;
+      z-index: 10;
+  }
+  .card image {
+      border-radius: 10px;
+      display: block;
+      width: 100%;
+      height: 12rem;
+  }
+
+  .card text {
+      position: absolute;
+      left: 1rem;
+      bottom: 3rem;
+      color: red;
+      font-size: 1.3rem;
+  }
+ .kongbai{
+  width: 100%;
+  height: 15rem;
+  background: white;
+  position: absolute;
+  top: 0px; 
+  z-index: 1;
+} 
+.pers-list {
+  width: 750rpx;
+  position: absolute;
+  top: 15rem; 
+  margin-top: 20rpx;
+  z-index: 5;
+  background-color: #f5f4f4;
+}
+
+.pers-item {
+  height: 90rpx;
+  line-height: 90rpx;
+  background: #fff;
+  border-bottom: 2rpx solid #f0f0f0;
+  padding-left: 30rpx;
+  font-size: 30rpx;
+  position: relative;
+}
+
+.pers-item  view {
+  float: left;
+  margin-right: 20rpx;
+  font-size: 28rpx;
+  color: #838383;
+}
+
+.pers-icon1 {
+  width: 57rpx;
+  height: 57rpx;
+  margin-top: 16rpx;
+}
+
+.pers-icon1 image {
+  width: 100%;
+  height: 100%;
+}
+ .pers-bt {
+  margin-bottom: 20rpx;
+} 
+
+.pers-right {
+  width: 25rpx;
+  height: 30rpx;
+  top: 6rpx;
+  right: 5rpx;
+  position: absolute;
+}
+.pers-right-content{
+  position: absolute;
+  right: 35rpx;
+  height: 45rpx;
+}
+.pers-right-content text{
+  color: #ccc;
+  font-size: 24rpx;
+}
+.pers-right-content image {
+  width: 90rpx;
+  height: 100%;
+  margin-top: 25rpx;
+}
+.pers-right image {
+  width: 100%;
+  height: 100%;
+}
+
+.content-footer{
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  z-index: 5;
+}
+.content-footer .fot-text{
+  font-size: 24rpx;
+  color: #838383;
+  width: 100%;
+  height: 50rpx;
+  padding: 10rpx 0;
+  line-height: 50rpx;
+  background: white;
+}
+.content-footer .fot-end{
+  font-size: 24rpx;
+  color: #838383;
+  line-height: 40rpx;
+  background: white;
+}
