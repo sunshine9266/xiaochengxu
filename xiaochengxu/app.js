@@ -36,7 +36,11 @@ App({
   globalData: {
     userInfo: null
   },
+
   globalDatabendixiugai: {
+		userInfo: null
+	},
+  globalData1.1: {
     userInfo: null
   }
 })
