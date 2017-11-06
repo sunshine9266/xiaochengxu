@@ -39,6 +39,9 @@ App({
 test:{
 	name:suming
 },
+	test1:{
+	name:suming1
+},
   globalData1.1: {
     userInfo: null
   }
